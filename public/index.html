@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title">Update Journal Entry</h1>
+                        <form>
+                            <div class="field">
+                                <label class="label" for="zip">Your Zip Code</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="enter zip code here”" id="zip">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="feelings" class="label">How are you feeling?</label>
+                                <div class="control">
+                                    <textarea class="textarea" id="feelings" cols="30" rows="5"
+                                        placeholder="Enter your feelings here"></textarea>
+                                </div>
+                            </div>
+                            <button class="button is-primary" id="generate">Submit</button>
+                        </form>
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Your Entry</h1>
+                        <div class="notification is-info" id="entryHolder">
+                            <h2 class="subtitle" id="date"></h2>
+                            <div>
+                                Current Temperature: <span id="temp">?</span>&deg;F
+                            </div>
+                            <div>
+                                Feelings: <span id="content"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

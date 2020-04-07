@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// set up my colors
+
+$purple: #7c419e;
+$light-accent: #829ac0;
+$light-background: #f3f2f1;
+
+// override bulma styles
+$primary: $purple;
+$info: $light-accent;
+$body-background-color: #f3f2f1;
+
+// import only the bulma components I'm using
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "./node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
